@@ -8,8 +8,8 @@
         "test": "jest --coverage",
         "view:cov": "serve coverage/lcov-report",
         "clean": "rm -rf coverage src/**/*.js src/**/*.map",
-        "lint": "eslint '*/**/*.{js,ts,tsx}'",
-        "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",
+        "lint": "eslint '*/**/*.ts'",
+        "lint:fix": "eslint '*/**/*.ts' --fix",
         "test:watch": "jest --coverage --watchAll"
     },
     "author": "",
