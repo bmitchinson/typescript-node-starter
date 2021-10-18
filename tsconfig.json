@@ -4,9 +4,12 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true,
+        "inlineSourceMap": true,
         "esModuleInterop": true,
-        "lib": ["es2015"]
+        "lib": ["es2015"],
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "outDir": "dist"
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "**/*.test.ts"]
