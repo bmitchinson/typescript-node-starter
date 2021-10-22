@@ -1,4 +1,7 @@
+.idea
+
 node_modules
-coverage
 dist
 
+coverage
+jest_output
