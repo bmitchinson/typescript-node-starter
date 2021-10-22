@@ -5,6 +5,7 @@
     "main": "main.js",
     "scripts": {
         "start": "ts-node src/index.ts",
+        "build": "tsc",
         "watch": "nodemon src/index.ts",
         "test": "jest --coverage",
         "view:cov": "serve coverage/lcov-report",
