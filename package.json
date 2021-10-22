@@ -35,6 +35,7 @@
         "typescript": "^3.9.5"
     },
     "devDependencies": {
+        "jest-junit": "^13.0.0",
         "nodemon": "^2.0.13"
     }
 }
