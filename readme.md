@@ -6,6 +6,7 @@
 -   jest with coverage + class mocking
 -   eslint with prettier
 -   watch + dev scripts
+-   .env configuration validation + import pattern
 
 Node 16 at time of writing. Check .nvmrc
 
