@@ -8,3 +8,7 @@
 -   watch + dev scripts
 
 Node 16 at time of writing. Check .nvmrc
+
+### Tests
+
+Mocking utilizing the following class mock patterns: https://mitchinson.dev/jest-typescript-mocks/
