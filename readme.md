@@ -6,3 +6,5 @@
 -   jest with coverage + class mocking
 -   eslint with prettier
 -   watch + dev scripts
+
+Node 16 at time of writing. Check .nvmrc
