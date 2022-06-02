@@ -1,7 +1,7 @@
 {
-    "name": "kata-pencil-durability",
+    "name": "ts-node-starter",
     "version": "0.0.1",
-    "description": "Pencil Durability Code Kata",
+    "description": "Starter for ts-node app",
     "main": "main.js",
     "scripts": {
         "start": "ts-node src/index.ts",
