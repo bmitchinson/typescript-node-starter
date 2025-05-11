@@ -34,13 +34,15 @@ jobs:
             - uses: actions/checkout@v4
             - uses: oven-sh/setup-bun@v1
               with:
-                  bun-version: latest
+                bun-version: latest
             - run: bun install
-            - run: bun run test
-            - name: Test Report
-              uses: dorny/test-reporter@v1
-              if: success() || failure() # run this step even if previous step failed
+            - name: Run tests
+              run: bun test --coverage --coverage-reporter=lcov
+            - name: Report code coverage
+              uses: zgosalvez/github-actions-report-lcov@v4
               with:
-                  name: Test Results # Name of the check run which will be created
-                  path: jest_output/junit.xml # Path to test results
-                  reporter: jest-junit # Format of test results
+                coverage-files: coverage/lcov.*.info
+                artifact-name: code-coverage-report
+                github-token: ${{ secrets.GITHUB_TOKEN }}
+                working-directory: ./src
+                update-comment: true
