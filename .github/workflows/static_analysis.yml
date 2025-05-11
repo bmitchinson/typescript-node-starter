@@ -39,10 +39,8 @@ jobs:
             - name: Run tests
               run: bun test --coverage --coverage-reporter=lcov
             - name: Report code coverage
-              uses: zgosalvez/github-actions-report-lcov@v4
+              uses: kefasjw/lcov-pull-request-report@v1
+              # https://github.com/marketplace/actions/lcov-pull-request-report
               with:
-                coverage-files: coverage/lcov.*.info
-                artifact-name: code-coverage-report
+                lcov-file: coverage/lcov.info
                 github-token: ${{ secrets.GITHUB_TOKEN }}
-                working-directory: ./src
-                update-comment: true
