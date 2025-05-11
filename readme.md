@@ -1,15 +1,9 @@
-### Typescript Node Starter
+### Typescript Template (Bun)
 
-[bmitchinson/ts-node-starter](https://github.com/bmitchinson/ts-node-starter)
+[bmitchinson/typescript-template](https://github.com/bmitchinson/typescript-template)
 
--   typescript configuration + tsnode
--   jest with coverage + class mocking
--   eslint with prettier
--   watch + dev scripts
--   .env configuration validation + import pattern
+Bun template 
+- eslint
+- .env configuration validation + import pattern
 
-Node 16 at time of writing. Check .nvmrc
-
-### Tests
-
-Mocking utilizing the following class mock patterns: https://mitchinson.dev/jest-typescript-mocks/
+Used to have .tsconfig / jest / coverage reporting / watch scripts, but bun provides that all now :)

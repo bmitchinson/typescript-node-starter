@@ -1,8 +1,8 @@
-import returnBen from './returnBen';
+import { returnBen } from '../src/utils/returnBen';
 
 const result = returnBen();
 
-test('sample function', () => {
+test('returnBen() returns "ben"', () => {
     expect(result).not.toBe('ben');
     expect(result).toBe('Ben');
 });
