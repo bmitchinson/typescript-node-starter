@@ -11,35 +11,32 @@ jobs:
     Lint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v4
+            - uses: oven-sh/setup-bun@v1
               with:
-                  node-version: '16'
-                  cache: 'npm'
-            - run: npm install
-            - run: npm run lint
+                  bun-version: latest
+            - run: bun install
+            - run: bun run lint
 
     Build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v4
+            - uses: oven-sh/setup-bun@v1
               with:
-                  node-version: '16'
-                  cache: 'npm'
-            - run: npm install
-            - run: npm run build
+                  bun-version: latest
+            - run: bun install
+            - run: bun run build
 
     Test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v4
+            - uses: oven-sh/setup-bun@v1
               with:
-                  node-version: '16'
-                  cache: 'npm'
-            - run: npm install
-            - run: npm run test
+                  bun-version: latest
+            - run: bun install
+            - run: bun run test
             - name: Test Report
               uses: dorny/test-reporter@v1
               if: success() || failure() # run this step even if previous step failed
